@@ -4,7 +4,7 @@ words = ["Allegory", "Alliteration", "Allusion", "Anagram", "Analogy", "Antagoni
 			"Character (static)", "Cliamx", "Conflict", "Connotation", "Dark Comedy", "Denotation",
 			"Dystopia", "Epithet", "Euphemism", "Flashforward", "Flashback", "Foil", "Foreshadowing",
 			"Genre", "Hubris", "Hyperbole", "Idiom", "Imagery", "Internal Rhyme", "Irony (Verbal)", 
-			"Irony (Situational)", "Irony (Dynamic)", "Kenning", "++Malapropism++", "Metaphor"]
+			"Irony (Situational)", "Irony (Dynamic)", "Kenning", "Malapropism", "Metaphor"]
 
 definitions = ["Where characters or events in a story represent ideas and concepts",
 					"Repetition of an initial consonant sound, in poetry",
