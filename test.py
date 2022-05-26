@@ -51,14 +51,16 @@ definitions = ["Where characters or events in a story represent ideas and concep
 
 
 
+#Copyright 2022, Yicheng Xia, All rights reserved
 
 import random
 
+
 mode = int(input("Which mode do you want to play? 1 for definition to word, 2 for word to defition "))
 if mode != 1 and mode != 2:
-	print("no")
+	print("wrong answer")
 
-
+print("You can always type \"quit\" to quit the game and get your score")
 
 running = True
 score = 0
@@ -83,8 +85,7 @@ if mode == 1:
 			print(f"The correct answer was {words[index]}\n")
 
 		print("==================================================")
-
-if mode == 2:
+elif mode == 2:
 	while running:
 		print("==================================================")
 		index = random.choice(range(0, len(words)))
@@ -108,5 +109,6 @@ if mode == 2:
 
 
 		print("==================================================")
-
+else:
+    pass
 
