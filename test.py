@@ -54,6 +54,8 @@ definitions = ["Where characters or events in a story represent ideas and concep
 #Copyright 2022, Yicheng Xia, All rights reserved
 
 import random
+import colorama
+from colorama import Fore, Style
 
 
 mode = int(input("Which mode do you want to play? 1 for definition to word, 2 for word to defition "))
@@ -78,11 +80,13 @@ if mode == 1:
 			break
 
 		if answer.lower() == words[index].lower():
-			print("Correct! you got 1 point\n")
+			print(Fore.GREEN + "Correct! you got 1 point\n")
 			score += 1
+			print(Style.RESET_ALL)
 		else:
-			print("Wrong!")
+			print(Fore.RED + "Wrong!")
 			print(f"The correct answer was {words[index]}\n")
+			print(Style.RESET_ALL)
 
 		print("==================================================")
 elif mode == 2:
@@ -102,9 +106,12 @@ elif mode == 2:
 
 		if point == "yes":
 			score += 1
-			print("Congratulations, you got 1 point!\n")
+			print(Fore.GREEN + "Congratulations, you got 1 point!\n")
+			print(Style.RESET_ALL)
 		elif point == "no":
-			print("F\n")
+			print(Fore.RED + "F\n")
+			print(Style.RESET_ALL)
+
 
 
 
